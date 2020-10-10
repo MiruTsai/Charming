@@ -21,7 +21,6 @@
           <li class="site">隱私權政策</li>
           <li class="site">牙醫百顆</li>
           <li class="site">服務條款</li>
-          <li class="site"></li>
         </ul>
       </b-col>
       <b-col cols="3">
