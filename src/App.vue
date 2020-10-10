@@ -20,8 +20,21 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: NotoSansCJKtc;
+  src: url('../static/fonts/NotoSansCJKtc-Regular.otf');
+}
 #app {
   margin: 0 auto;
   text-decoration: none;
+  font-family: NotoSansCJKtc;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+
+.brown {
+  background-color: #bfb7ac;
 }
 </style>
