@@ -4,13 +4,13 @@
         <b-col>
           <h2 class="title">醫師陣容</h2>
           <ul class="drLists">
-            <li class="drList"><img src="" class="drPic"><span class="name">周裕人醫師</span></li>
-            <li class="drList"><img src="" class="drPic"><span class="name">王俊程醫師</span></li>
-            <li class="drList"><img src="" class="drPic"><span class="name">張杏茹醫師</span></li>
-            <li class="drList"><img src="" class="drPic"><span class="name">曾筱婷醫師</span></li>
-            <li class="drList"><img src="" class="drPic"><span class="name">周佳琳醫師</span></li>
-            <li class="drList"><img src="" class="drPic"><span class="name">汪文琲醫師</span></li>
-            <li class="drList"><img src="" class="drPic"><span class="name">林宗佑醫師</span></li>
+            <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">周裕人醫師</span></li>
+            <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">王俊程醫師</span></li>
+            <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">張杏茹醫師</span></li>
+            <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">曾筱婷醫師</span></li>
+            <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">周佳琳醫師</span></li>
+            <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">汪文琲醫師</span></li>
+            <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">林宗佑醫師</span></li>
           </ul>
         </b-col>
         <b-col class="drInfo">
@@ -28,6 +28,7 @@
             <div class="text">週一至週五 14:00 - 18:00</div>
           </div>
         </b-col>
+        <img src="/static/images/hiclipart.com-1.png" alt="" class="pic">
       </b-row>
     </div>
 </template>
@@ -46,6 +47,7 @@ export default {
   margin: 60px 0;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .drGroup .row {
   width: 90%;
@@ -92,7 +94,6 @@ h2.title {
   width: 52px;
   height: 52px;
   border-radius: 52px;
-  background-color: aquamarine;
 }
 .drInfo {
   width: 590px;
@@ -111,5 +112,9 @@ h2.title {
   flex-direction: column;
   margin-bottom: 20px;
 }
-
+.drGroup .pic {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
 </style>

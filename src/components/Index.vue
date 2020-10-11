@@ -1,10 +1,14 @@
 <template>
   <div class="index">
-    <img src="" alt="" class="logo">
+    <div class="logo">
+      <router-link to="/">
+        <img src="../../static/images/logo@2x.png" alt="logo">
+      </router-link>
+    </div>
     <carousel />
     <latest-news />
     <b-container fluid class="about">
-      <img src="" alt="" class="pic">
+      <img src="/static/images/Mask_Group_256.png" alt="" class="pic">
       <div class="description">
         <div class="title">關於碩美</div>
         <p class="desc">碩美牙醫擁有經驗豐富的台大專業醫師團隊及頂尖的數位醫療設備，在這裡您將感受親切服務誠摯溝通、醫師的縝密診斷與適切治療為您把關口腔健康，讓您重拾自信的微笑。</p>
@@ -15,7 +19,7 @@
     <latest-news-pic />
     <b-container fluid class="treatment">
       <div class="brown">
-        <img src="" alt="" class="pic">
+        <img src="/static/images/Group_3938.png" alt="" class="pic">
       </div>
       <div class="description">
           <div class="title">診療項目</div>
@@ -27,6 +31,7 @@
     <treatment-detail />
     <treatment />
     <doctor-group />
+    <h2 class="title">醫師專欄</h2>
     <doctor-column />
   </div>
 </template>
@@ -57,9 +62,14 @@ export default {
   position: absolute;
   width: 223.1px;
   height: 185px;
-  z-index: 10;
+  line-height: 170px;
+  text-align: center;
+  z-index: 50;
   background-color: #6799ba;
   top: 0;
+}
+.logo img {
+  width: 90%;
 }
 hr {
   width: 77%
@@ -86,12 +96,7 @@ hr {
   line-height: 1.5;
   letter-spacing: 0.8px;
 }
-.about .pic{
-  width: 822px;
-  height: 468px;
-  opacity: 0.7;
-  background-color: yellow;
-}
+
 .about .description {
   background-color: #639cb9;
   color: #fff;
@@ -124,9 +129,6 @@ hr {
   position: relative;
 }
 .treatment .pic {
-  width: 702px;
-  height: 440px;
-  background-color: yellow;
   border-radius: 0 50px 0 50px;
   position: absolute;
   left: 120px;

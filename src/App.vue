@@ -24,6 +24,18 @@ export default {
   font-family: NotoSansCJKtc;
   src: url('../static/fonts/NotoSansCJKtc-Regular.otf');
 }
+@font-face {
+  font-family: HelveticaNeueLTStd-BdCnO;
+  src: url('../static/fonts/helveticaneue/HelveticaNeueBd.ttf');
+}
+@font-face {
+  font-family: HelveticaNeueLTStd-MdCn;
+  src: url('../static/fonts/helveticaneue/HelveticaNeueMed.ttf');
+}
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('../static/fonts/helveticaneue/HelveticaNeue.ttf');
+}
 #app {
   margin: 0 auto;
   text-decoration: none;

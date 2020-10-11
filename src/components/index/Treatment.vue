@@ -3,7 +3,7 @@
     <b-row>
       <b-col class="brown">
         <div class="rect"></div>
-        <img src="" alt="" class="icon">
+        <img src="/static/images/ic-5-1.png" alt="" class="icon">
         <div class="bottom">
           <div class="line"></div>
           <div class="title">診療項目</div>
@@ -12,7 +12,7 @@
       </b-col>
       <b-col class="brown">
         <div class="rect"></div>
-        <img src="" alt="" class="icon">
+        <img src="/static/images/ic-5-2.png" alt="" class="icon">
         <div class="bottom">
           <div class="line"></div>
           <div class="title">診療項目</div>
@@ -21,7 +21,7 @@
       </b-col>
       <b-col class="brown">
         <div class="rect"></div>
-        <img src="" alt="" class="icon">
+        <img src="/static/images/ic-5-3.png" alt="" class="icon">
         <div class="bottom">
           <div class="line"></div>
           <div class="title">診療項目</div>
@@ -30,7 +30,7 @@
       </b-col>
       <b-col class="brown">
         <div class="rect"></div>
-        <img src="" alt="" class="icon">
+        <img src="/static/images/ic-5-4.png" alt="" class="icon">
         <div class="bottom">
           <div class="line"></div>
           <div class="title">診療項目</div>
@@ -70,6 +70,14 @@ export default {
   height: 20px;
   background-color: #639cb9;
   margin: 15px;
+}
+.icon {
+  width:37px;
+  height: 37px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
 }
 .title {
   font-size: 22px;

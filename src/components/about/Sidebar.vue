@@ -5,7 +5,7 @@
       關於碩美
     </div>
     <div class="box">
-      <b-button v-b-toggle.collapse-1>醫療團隊</b-button>
+      <button class="btn collapsed" v-b-toggle.collapse-1>醫療團隊</button>
       <b-collapse id="collapse-1">
         <ul>
           <li><span>—</span>張杏茹醫師</li>
@@ -19,7 +19,7 @@
       </b-collapse>
     </div>
     <div class="box">
-      <b-button v-b-toggle.collapse-2 variant="primary">醫療團隊</b-button>
+      <button class="btn collapsed" v-b-toggle.collapse-2>診所環境設備</button>
       <b-collapse id="collapse-2" class="mt-2">
         <ul>
           <li><span>—</span>數位診療設備</li>
@@ -39,7 +39,31 @@ export default {
 }
 </script>
 <style scoped>
+.sidebar {
+  background-color: #eae8e4;
+  width: 20%;
+}
 ul {
   padding: 0;
+  color: #727272;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+ul li:hover{
+  color: #6799ba;
+}
+.box {
+  margin: 10px auto;
+}
+.btn:focus{
+  color: #6799ba;
+  box-shadow: none;
 }
 </style>

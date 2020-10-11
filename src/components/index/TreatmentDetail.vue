@@ -2,7 +2,7 @@
   <b-container class="treatmentDetail">
     <b-row>
       <b-col class="type1">
-        <img src="" alt="" class="pic">
+        <img src="/static/images/Mask_Group_264.png" alt="" class="pic">
         <div class="detail">
           <h2 class="title">診療項目</h2>
           <div class="info">簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介</div>
@@ -13,12 +13,12 @@
           <h2 class="title">診療項目</h2>
           <div class="info">簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介</div>
         </div>
-        <img src="" alt="" class="pic">
+        <img src="/static/images/Mask_Group_263.png" alt="" class="pic">
       </b-col>
     </b-row>
     <b-row>
       <b-col class="type1">
-        <img src="" alt="" class="pic">
+        <img src="/static/images/Mask_Group_265.png" alt="" class="pic">
         <div class="detail">
           <h2 class="title">診療項目</h2>
           <div class="info">簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介</div>
@@ -29,7 +29,7 @@
           <h2 class="title">診療項目</h2>
           <div class="info">簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介</div>
         </div>
-        <img src="" alt="" class="pic">
+        <img src="/static/images/Mask_Group_266.png" alt="" class="pic">
       </b-col>
     </b-row>
   </b-container>
@@ -64,7 +64,6 @@ export default {
   width: 285px;
   height: 186px;
   border-radius: 10px;
-  background-color: orange;
 }
 
 </style>

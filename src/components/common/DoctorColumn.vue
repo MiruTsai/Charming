@@ -1,11 +1,10 @@
 <template>
   <b-container class="doctorColumn">
-      <h2>醫師專欄</h2>
       <b-row>
         <b-col>
           <b-card
             title="Card Title"
-            img-src="https://picsum.photos/600/300/?image=25"
+            img-src="/static/images/Mask_Group_268.png"
             img-alt="Image"
             img-top
             tag="article"
@@ -21,7 +20,7 @@
         <b-col>
           <b-card
             title="Card Title"
-            img-src="https://picsum.photos/600/300/?image=25"
+            img-src="/static/images/Mask_Group_269.png"
             img-alt="Image"
             img-top
             tag="article"
@@ -37,7 +36,7 @@
         <b-col>
           <b-card
             title="Card Title"
-            img-src="https://picsum.photos/600/300/?image=25"
+            img-src="/static/images/Mask_Group_270.png"
             img-alt="Image"
             img-top
             tag="article"
@@ -63,6 +62,6 @@ export default {
 </script>
 <style scoped>
 .doctorColumn {
-  margin: 50px auto;
+  margin: 20px auto;
 }
 </style>
