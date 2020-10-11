@@ -1,15 +1,14 @@
 <template>
   <b-container class="latestNews">
-      <h2>最新消息</h2>
+      <div class="title">最新消息<span class="decoration"></span></div>
       <b-row>
         <b-col>
           <b-card
             title="Card Title"
-            img-src="https://picsum.photos/600/300/?image=25"
+            img-src="/static/images/Mask_Group_253.png"
             img-alt="Image"
             img-top
             tag="article"
-            style="max-width: 20rem"
             class="mb-2"
           >
             <b-card-text>
@@ -21,11 +20,10 @@
         <b-col>
           <b-card
             title="Card Title"
-            img-src="https://picsum.photos/600/300/?image=25"
+            img-src="/static/images/Mask_Group_254.png"
             img-alt="Image"
             img-top
             tag="article"
-            style="max-width: 20rem"
             class="mb-2"
           >
             <b-card-text>
@@ -37,11 +35,10 @@
         <b-col>
           <b-card
             title="Card Title"
-            img-src="https://picsum.photos/600/300/?image=25"
+            img-src="/static/images/Mask_Group_255.png"
             img-alt="Image"
             img-top
             tag="article"
-            style="max-width: 20rem"
             class="mb-2"
           >
             <b-card-text>
@@ -63,6 +60,32 @@ export default {
 </script>
 <style scoped>
 .latestNews {
-  margin: 50px auto;
+  margin-top: -170px;
+  margin-bottom: 70px;
 }
+.title {
+  color: #fff;
+  position: relative;
+  width: 15%;
+  border-bottom: 1px solid #639cb9;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.46;
+  margin-bottom: 40px;
+}
+.decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 35px;
+  border: solid 3px#639cb9;
+}
+article {
+  border-radius: 10px;
+}
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
 </style>

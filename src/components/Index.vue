@@ -10,7 +10,7 @@
     <b-container fluid class="about">
       <img src="/static/images/Mask_Group_256.png" alt="" class="pic">
       <div class="description">
-        <div class="title">關於碩美</div>
+        <div class="title"><span class="decoration"></span>關於碩美</div>
         <p class="desc">碩美牙醫擁有經驗豐富的台大專業醫師團隊及頂尖的數位醫療設備，在這裡您將感受親切服務誠摯溝通、醫師的縝密診斷與適切治療為您把關口腔健康，讓您重拾自信的微笑。</p>
         <button class="btn">關於碩美</button>
       </div>
@@ -22,7 +22,7 @@
         <img src="/static/images/Group_3938.png" alt="" class="pic">
       </div>
       <div class="description">
-          <div class="title">診療項目</div>
+          <div class="title"><span class="decoration"></span>診療項目</div>
           <p class="desc">簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介</p>
           <button class="btn">關於碩美</button>
       </div>
@@ -31,7 +31,7 @@
     <treatment-detail />
     <treatment />
     <doctor-group />
-    <h2 class="title">醫師專欄</h2>
+    <div class="column">醫師專欄<span class="decoration"></span></div>
     <doctor-column />
   </div>
 </template>
@@ -72,7 +72,7 @@ export default {
   width: 90%;
 }
 hr {
-  width: 77%
+  width: 85%
 }
 .img {
   width: 1151px;
@@ -83,12 +83,6 @@ hr {
   background-color: #bfb7ac;
   display: flex;
   padding: 0;
-}
-.about .title {
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 1.46;
-  text-align: right;
 }
 .about .desc {
   font-size: 16px;
@@ -104,6 +98,25 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
+}
+.about .title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.46;
+  text-align: right;
+  border-bottom: 1px solid #fff;
+  width: 35%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.about .decoration{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 35px;
+  border: solid 3px #fff;
 }
 .about .btn {
   border-radius: 5px;
@@ -111,6 +124,7 @@ hr {
   width: 100%;
   padding: 5px;
   color: #fff;
+  margin-top: 20px;
 }
 .about .brown {
   width: 10%;
@@ -139,6 +153,19 @@ hr {
   font-weight: 500;
   line-height: 1.46;
   text-align: right;
+  border-bottom: 1px solid #639cb9;
+  position: relative;
+  width:50%;
+  color:#646464;
+  margin-bottom: 20px;
+}
+.treatment .title .decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 35px;
+  border: solid 3px #639cb9;
 }
 .treatment .description {
   flex-basis: 30%;
@@ -148,6 +175,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   margin-right: 100px;
+  align-items: flex-end;
 }
 .treatment .desc {
   font-size: 16px;
@@ -162,5 +190,23 @@ hr {
   padding: 5px;
   color: #000;
 }
-
+.column {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.46;
+  border-bottom: 1px solid #639cb9;
+  position: relative;
+  width:12%;
+  color:#646464;
+  margin-bottom: 30px;
+  margin-left: 90px;
+}
+.column .decoration{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 35px;
+  border: solid 3px #639cb9;
+}
 </style>

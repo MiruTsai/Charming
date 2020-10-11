@@ -1,6 +1,6 @@
 <template>
   <b-container class="latestNewsPic">
-    <h2>最新消息</h2>
+    <div class="title">最新消息<span class="decoration"></span></div>
     <b-row>
       <b-col>
         <b-card
@@ -123,5 +123,23 @@ export default {
   line-height: 1.28;
   display: flex;
   align-items: center;
+}
+.title {
+  color: #646464;
+  position: relative;
+  width: 15%;
+  border-bottom: 1px solid #639cb9;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.46;
+  margin-bottom: 40px;
+}
+.decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 35px;
+  border: solid 3px#639cb9;
 }
 </style>

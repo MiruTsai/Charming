@@ -2,7 +2,7 @@
   <div class="drGroup">
       <b-row>
         <b-col>
-          <h2 class="title">醫師陣容</h2>
+          <div class="title">醫師陣容<span class="decoration"></span></div>
           <ul class="drLists">
             <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">周裕人醫師</span></li>
             <li class="drList"><img src="/static/images/Group_3943.png" class="drPic"><span class="name">王俊程醫師</span></li>
@@ -28,7 +28,7 @@
             <div class="text">週一至週五 14:00 - 18:00</div>
           </div>
         </b-col>
-        <img src="/static/images/hiclipart.com-1.png" alt="" class="pic">
+        <img src="/static/images/Mask_Group_267.png" alt="" class="pic">
       </b-row>
     </div>
 </template>
@@ -65,8 +65,23 @@ h2 {
   padding: 10px 0;
   border-bottom: 1px solid #fff;
 }
-h2.title {
+.title {
   border-bottom: 1px solid#639cb9;
+  position: relative;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.46;
+  color: #646464;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.title .decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 35px;
+  border: solid 3px #639cb9;
 }
 .drLists {
   display: flex;
@@ -100,6 +115,7 @@ h2.title {
   height: 396px;
   background-color: #639cb9;
   color: #fff;
+  padding: 40px 0 0 40px;
 }
 .list, .text {
   font-size: 16px;
@@ -115,6 +131,6 @@ h2.title {
 .drGroup .pic {
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: -35px;
 }
 </style>

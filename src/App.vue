@@ -49,4 +49,9 @@ ul {
 .brown {
   background-color: #bfb7ac;
 }
+@media (min-width: 1200px){
+  .container {
+    max-width: 1250px;
+  }
+}
 </style>
