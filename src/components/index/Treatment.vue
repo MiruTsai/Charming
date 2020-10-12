@@ -62,7 +62,7 @@ export default {
 .line{
   width: 41.5px;
   height: 0;
-  border: solid 4px #fff;
+  border-bottom: solid 8px #fff;
   margin: 5px 0;
 }
 .rect {

@@ -10,7 +10,7 @@
             <b-nav-item><router-link to="/about" exact>關於碩美</router-link></b-nav-item>
             <b-nav-item href="#">診療項目</b-nav-item>
             <b-nav-item href="#"><router-link to="/encyclopedia" exact>牙醫百科</router-link></b-nav-item>
-            <b-nav-item href="#">診所資訊</b-nav-item>
+            <b-nav-item href="#"><router-link to="/info" exact>診所資訊</router-link></b-nav-item>
             <b-nav-item href="#">諮詢顧問</b-nav-item>
           </b-navbar-nav>
         </b-navbar>

@@ -140,6 +140,6 @@ export default {
   right: 0;
   height: 0;
   width: 35px;
-  border: solid 3px#639cb9;
+  border-bottom: solid 6px#639cb9;
 }
 </style>

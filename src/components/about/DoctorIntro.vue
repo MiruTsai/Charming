@@ -36,6 +36,7 @@
         <p class="introduce">此外，張醫師”輕盈” 的治療手法及注意診療時病人的感受，讓每位病人在診療時，都可得到最佳的診療體驗。</p>
         <div class="title">醫師專欄</div>
         <doctor-column />
+        <div class="title">看診時間</div>
       </b-collapse>
     </div>
   </b-container>
@@ -163,7 +164,7 @@ export default {
   height: 0;
   border: solid 1px #e6e6e6;
 }
-.btn {
+.btn.collapsed {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.43;

@@ -116,7 +116,7 @@ hr {
   left: 0;
   height: 0;
   width: 35px;
-  border: solid 3px #fff;
+  border-bottom: solid 6px #fff;
 }
 .about .btn {
   border-radius: 5px;
@@ -165,7 +165,7 @@ hr {
   left: 0;
   height: 0;
   width: 35px;
-  border: solid 3px #639cb9;
+  border-bottom: solid 6px #639cb9;
 }
 .treatment .description {
   flex-basis: 30%;
@@ -207,6 +207,6 @@ hr {
   right: 0;
   height: 0;
   width: 35px;
-  border: solid 3px #639cb9;
+  border-bottom: solid 6px #639cb9;
 }
 </style>

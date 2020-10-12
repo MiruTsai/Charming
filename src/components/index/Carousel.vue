@@ -129,7 +129,7 @@ export default {
   left: 100px;
 }
 .line {
-  border: solid 5px #fff;
+  border-top: solid 10px #fff;
   width: 30%;
   margin-bottom: 20px;
 }

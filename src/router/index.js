@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Index from '@/components/Index'
 import About from '@/components/About'
 import Encyclopedia from '@/components/Encyclopedia'
+import Info from '@/components/Info'
 
 Vue.use(Router)
 export default new Router({
@@ -21,6 +22,11 @@ export default new Router({
       path: '/encyclopedia',
       name: 'encyclopedia',
       component: Encyclopedia
+    },
+    {
+      path: '/info',
+      name: 'info',
+      component: Info
     }
   ]
 })
