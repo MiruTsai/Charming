@@ -3,7 +3,9 @@ import Router from 'vue-router'
 import Index from '@/components/Index'
 import About from '@/components/About'
 import Encyclopedia from '@/components/Encyclopedia'
-import Info from '@/components/Info'
+import Location from '@/components/Location'
+import Contact from '@/components/Contact'
+import Diagnosis from '@/components/Diagnosis'
 
 Vue.use(Router)
 export default new Router({
@@ -24,9 +26,19 @@ export default new Router({
       component: Encyclopedia
     },
     {
-      path: '/info',
-      name: 'info',
-      component: Info
+      path: '/location',
+      name: 'location',
+      component: Location
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
+    },
+    {
+      path: '/diagnosis',
+      name: 'diagnosis',
+      component: Diagnosis
     }
   ]
 })

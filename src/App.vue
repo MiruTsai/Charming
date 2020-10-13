@@ -45,6 +45,9 @@ export default {
 ul {
   list-style: none;
 }
+a {
+  color: #aaaaaa;
+}
 
 .brown {
   background-color: #bfb7ac;

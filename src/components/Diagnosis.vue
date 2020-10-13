@@ -92,10 +92,4 @@ main {
   font-size: 18px;
   font-weight: 700;
 }
-.map {
-  max-width: 1000px;
-}
-.map img{
-  width:100%;
-}
 </style>

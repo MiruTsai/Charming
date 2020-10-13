@@ -30,9 +30,9 @@
       </div>
       <b-collapse id="collapse-2" class="mt-2">
         <ul>
-          <li><span>—</span>數位診療設備</li>
-          <li><span>—</span>防疫、消毒設備</li>
-          <li><span>—</span>舒適診療環境</li>
+          <li><a href="#digital"><span>—</span>數位診療設備</a></li>
+          <li><a href="#prevention"><span>—</span>防疫、消毒設備</a></li>
+          <li><a href="#environment"><span>—</span>舒適診療環境</a></li>
         </ul>
       </b-collapse>
     </div>

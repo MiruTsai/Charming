@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <v-nav />
+    <v-nav :nav="nav" />
     <div class="classify">
       <div class="title">牙醫百科</div>
       <div class="searchBox">
@@ -42,6 +42,16 @@ export default {
         { value: 'b', text: 'Selected Option' },
         { value: { C: '3PO' }, text: 'This is an option with object value' },
         { value: 'd', text: 'This one is disabled', disabled: true }
+      ],
+      nav: [
+        {
+          text: '首頁',
+          href: '/'
+        },
+        {
+          text: '牙醫百科',
+          href: '#'
+        }
       ]
     }
   }

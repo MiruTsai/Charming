@@ -1,25 +1,11 @@
 <template>
-  <b-breadcrumb :items="items"></b-breadcrumb>
+  <b-breadcrumb :items="nav"></b-breadcrumb>
 </template>
 <script>
 export default {
+  props: ['nav'],
   data () {
-    return {
-      items: [
-        {
-          text: '首頁',
-          href: '#'
-        },
-        {
-          text: '關於碩美',
-          href: '#'
-        },
-        {
-          text: '醫療團隊',
-          active: true
-        }
-      ]
-    }
+    return {}
   }
 }
 </script>
@@ -28,8 +14,18 @@ export default {
   width: 100%;
   background-color: transparent;
   padding: 0;
+  margin: 30px 0;
+  color: #aaaaaa;
 }
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
+  margin: 0 20px;
+}
+.breadcrumb a {
+  color: #aaaaaa;
+}
+.breadcrumb-item.active
+{
+  color: #aaaaaa;
 }
 </style>
