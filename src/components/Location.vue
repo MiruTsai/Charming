@@ -13,15 +13,19 @@
         <div class="text">台北市建國南路二段276號9樓</div>
       </div>
       <div class="time">
-        <div class="desc">看診時間</div>
-        <div class="highlight">週一至週五</div>
-        <div class="text">上午 9:00-12:00</div>
-        <div class="text">下午 14:00-17:30</div>
-        <div class="text">晚上 18:00-21:00</div>
-        <div class="highlight">週六</div>
-        <div class="text">上午 9:00-12:00</div>
-        <div class="highlight">週日</div>
-        <div class="text">休診</div>
+        <div class="wrap">
+          <div class="desc">看診時間</div>
+          <div class="highlight">週一至週五</div>
+          <div class="text">上午 9:00-12:00</div>
+          <div class="text">下午 14:00-17:30</div>
+          <div class="text">晚上 18:00-21:00</div>
+        </div>
+        <div class="wrap">
+          <div class="highlight">週六</div>
+          <div class="text">上午 9:00-12:00</div>
+          <div class="highlight">週日</div>
+          <div class="text">休診</div>
+        </div>
       </div>
     </div>
     <div class="map">
@@ -77,11 +81,12 @@ export default {
 }
 main {
   display: flex;
+  flex-wrap: wrap;
 }
 .info {
   border-radius: 10px;
   background-color: #eae8e440;
-  padding: 35px 50px;
+  padding: 28px 50px;
   margin-right: 15px;
 }
 .desc {
@@ -89,7 +94,7 @@ main {
   font-weight: 500;
   line-height: 1.5;
   color: #bfb7ac;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .text {
   color: #646464;
@@ -99,7 +104,7 @@ main {
   letter-spacing: 3.2px;
 }
 .highlight {
-  margin-top: 20px;
+  margin-top: 15px;
   color: #646464;
   line-height: 1.5;
   letter-spacing: 3.6px;
@@ -107,9 +112,37 @@ main {
   font-weight: 700;
 }
 .map {
-  max-width: 1000px;
+  max-width: 787px;
 }
 .map img{
   width:100%;
+}
+@media (max-width:901px){
+  .info {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .time {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .time .wrap {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 601px){
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .phone,.address {
+    flex-basis: 70%;
+  }
+}
+@media (max-width: 376px) {
+  .time .wrap {
+    flex-basis: 50%;
+  }
 }
 </style>

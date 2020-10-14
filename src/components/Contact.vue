@@ -78,6 +78,7 @@ export default {
   position: relative;
   padding-top: 30px;
   padding-bottom: 70px;
+  margin-bottom: 50px;
 }
 .right {
   margin-left: 470px;
