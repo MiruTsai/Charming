@@ -48,6 +48,10 @@ ul {
 a {
   color: #aaaaaa;
 }
+a:hover {
+  text-decoration: none;
+  color: #6799ba;
+}
 
 .brown {
   background-color: #bfb7ac;

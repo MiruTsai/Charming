@@ -22,6 +22,7 @@ export default {
   background-color: #eae8e440;
   padding: 35px;
   display: flex;
+  margin: 15px 0;
 }
 .box img{
   flex-basis: 30%;

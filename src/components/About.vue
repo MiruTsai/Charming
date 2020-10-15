@@ -19,16 +19,16 @@
             <div id="digital" class="intro">數位診療設備</div>
             <p class="info">數位科技發展為牙科醫學帶起了嶄新的發展，過去牙醫師只能靠X光片拼湊牙齒的狀況，現在有了3D斷層掃描和數位口掃機可以提供完整的資訊，讓醫師可以在診療前，更全面的掌握患者口腔狀況，碩美牙醫引進了全套的數位檢測設備，包含：口內根尖 X光片、環口全景攝影、3D全口斷層掃瞄、側顱攝影等，除能更了解患者的口腔狀態，更能大大地減少患者所接收的輻射劑量；此外，在治療上，我們也引進了3D全彩口內掃描機DSD - digital smile design微笑設計、牙科顯微鏡、活髓治療、3D齒雕機…等，透過科技輔助，讓醫師在診療時可以更即時且清楚了解患者的狀況外，更能給予患者最適洽的診療方式，提升醫療品質。</p>
           </div>
-          <di v-for="(item, index) in digital" :key="index">
+          <div v-for="(item, index) in digital" :key="index">
             <equipment :equip="item" />
-          </di>
+          </div>
         </div>
         <div id="prevention" class="intro">防疫、消毒設備</div>
         <p class="info">徹底器械消毒是交叉感染控制的第一關，環境消毒更是傳染病控制的必要手段，碩美牙醫採用高規格的三度抽真空Class B消毒鍋設備，真空高溫消毒，讓所有器械不僅肉眼看的到的部分徹底消毒，細微的孔徑，也能滴水不漏地把關。此外，針對防疫措施，我們除了為每位患者準備專屬的醫療器械外，更採最高標準的預防交叉感染措施，每個診間均安裝空氣清淨機淨化空氣中的飛沫感染源，當每位患者完成診療時，診間、治療椅我們會將每個細節、所有設備(包含隙縫處)皆以消毒液噴灑，再以消毒紙巾仔細擦拭後，覆上乾淨的膠膜，保障患者在最安全的就醫環境完成診療。
         </p>
-        <di v-for="(item, index) in equipment" :key="index">
+        <div v-for="(item, index) in equipment" :key="index">
             <equipment :equip="item" />
-          </di>
+          </div>
         <div id="environment" class="intro">舒適診療環境</div>
         <div class="boxContainer">
           <div class="pictureBox">

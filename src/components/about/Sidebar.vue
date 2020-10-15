@@ -56,6 +56,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding:30px;
 }
 ul {
   padding: 0;
@@ -75,7 +76,7 @@ ul li:hover{
   color: #6799ba;
 }
 .box {
-  margin: 10px auto;
+  margin: 10px 0;
 }
 .btn:focus{
   color: #6799ba;
