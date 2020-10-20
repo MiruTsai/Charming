@@ -15,7 +15,10 @@ export default {
     'v-navbar': navBar,
     'v-footer': footer
   },
-  name: 'App'
+  name: 'App',
+  mounted () {
+    console.log('this', this)
+  }
 }
 </script>
 

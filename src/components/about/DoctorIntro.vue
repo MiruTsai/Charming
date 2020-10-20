@@ -37,15 +37,18 @@
         <div class="title">醫師專欄</div>
         <doctor-column />
         <div class="title">看診時間</div>
+        <time-table />
       </b-collapse>
     </div>
   </b-container>
 </template>
 <script>
 import doctorColumn from '../common/DoctorColumn'
+import timeTable from '../about/TimeTable'
 export default {
   components: {
-    'doctor-column': doctorColumn
+    'doctor-column': doctorColumn,
+    'time-table': timeTable
   },
   data () {
     return {

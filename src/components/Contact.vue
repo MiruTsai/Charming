@@ -3,7 +3,7 @@
   <v-nav :nav="nav" />
   <div class="title">諮詢顧問<span class="decoration"></span></div>
   <b-container class="main">
-    <img src="/static/images/Mask_Group_273.png" alt="" class="pic">
+    <div class="pic"></div>
     <div class="right">
       <div class="highlight">Dear Patients:</div>
       <div class="text">請留下聯絡資訊及您的問題,櫃檯將盡速與您聯絡</div>
@@ -67,8 +67,11 @@ export default {
 }
 .pic {
   position: absolute;
-  left: -120px;
-  bottom: 79px;
+  width: 529px;
+  height: 616px;
+  background-image: url("/static/images/contact_us1.png");
+  left: -100px;
+  bottom: 68px;
 }
 .main {
   border-radius: 10px;
@@ -133,5 +136,69 @@ button {
   font-weight: 500;
   line-height: 1.45;
   padding: 10px 0;
+}
+@media (max-width: 1200px){
+  .breadcrumb{
+    display: none;
+  }
+  .main {
+    padding-top: 0;
+  }
+  .pic {
+    background-image: url("/static/images/contact_us4.png");
+    width: 319px;
+    left: 0;
+  }
+  .title{
+    width: 16%;
+    margin: 20px;
+  }
+  .desc {
+    margin-top: 10px;
+  }
+  @media (max-width: 769px){
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .pic {
+      position: static;
+      background: url("/static/images/contact_us3.png") no-repeat center;
+      width: 600px;
+      height: 444px;
+      margin-top: 30px;
+    }
+    .right {
+      margin-left: 60px;
+      width: 100%;
+    }
+    .title {
+      width: 21%;
+    }
+  }
+  @media(max-width: 415px) {
+    .container {
+      padding: 0;
+    }
+    .pic {
+      background: url("/static/images/contact_us2.png") no-repeat center;
+      width: 375px;
+      height: 278px;
+      margin-top: 0;
+    }
+    .title {
+      font-size: 20px;
+      width: 35%;
+      margin: 10px;
+    }
+    .right{
+      margin-left: 20px;
+    }
+    .text {
+      padding-right: 5px;
+    }
+  }
 }
 </style>

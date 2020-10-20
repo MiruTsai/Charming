@@ -62,6 +62,7 @@ import nav from './common/Nav'
 import sideBar from './about/SideBar'
 import doctorIntro from './about/DoctorIntro'
 import equipment from './about/Equipment'
+
 export default {
   components: {
     'side-bar': sideBar,

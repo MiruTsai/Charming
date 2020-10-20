@@ -16,7 +16,7 @@
           <li class="site">聯絡我們</li>
           <li class="site">案例分享</li>
           <li class="site">隱私權政策</li>
-          <li class="site">牙醫百顆</li>
+          <li class="site">牙醫百科</li>
           <li class="site">服務條款</li>
         </ul>
       </div>
@@ -129,7 +129,7 @@ li img {
   margin-top: 35px;
 }
 
-@media(max-width: 601px){
+@media(max-width: 769px){
   .footer-logo {
     width: 120px;
   }
@@ -152,6 +152,29 @@ li img {
   }
   .mapList li {
     flex-basis: 16%;
+  }
+  @media(max-width: 415px) {
+    .footer {
+      justify-content: flex-start;
+    }
+    .siteMap {
+      margin: 0;
+    }
+    .mapList li {
+      flex-basis: 25%;
+    }
+    .intro {
+      flex-basis: 100%;
+      margin:10px 0 70px 0;
+    }
+    .contactUs {
+      flex-basis: 100%;
+      margin: 0;
+    }
+    .blueBar {
+      width: 220px;
+      height: 50px;
+    }
   }
 }
 </style>
