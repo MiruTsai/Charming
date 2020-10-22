@@ -170,7 +170,6 @@ export default {
 .banner {
   height: 349.6px;
   width: 100%;
-  background-color: yellow;
   margin: 30px auto;
 }
 main {
@@ -226,5 +225,34 @@ main {
   line-height: 1.5;
   color: #bfb7ac;
   margin: 20px 0;
+}
+@media (max-width: 1200px){
+  .breadcrumb{
+    display: none;
+  }
+  .about {
+    margin: 0;
+    width: 100%;
+  }
+  .banner {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 769px){
+  .sidebar {
+    display: none;
+  }
+  .title {
+    width:21%;
+  }
+}
+@media (max-width: 415px){
+  .title {
+    font-size: 20px;
+    width:25%;
+    margin: 10px 0;
+  }
 }
 </style>

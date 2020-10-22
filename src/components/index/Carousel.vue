@@ -9,12 +9,12 @@
         </div>
       </div>
       <div class="bottom">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+        <div class="dot" @click="showCarousel = 'carousel1'"></div>
+        <div class="dot" @click="showCarousel = 'carousel2'"></div>
+        <div class="dot" @click="showCarousel = 'carousel3'"></div>
       </div>
     </div>
-    <div class="carousel-item">
+    <div v-if="showCarousel === 'carousel1'" class="carousel1">
       <div class="left">
         <div class="line"></div>
         <div class="slogan">
@@ -29,29 +29,28 @@
         </div>
       </div>
       <div class="right">
-        <img src="/static/images/Group_3929.png" alt="">
+        <img src="/static/images/Banner1.png" alt="">
       </div>
     </div>
-    <div class="carousel-item active">
-      <div class="leftBox">
-        <div class="left2">
-          <div class="line"></div>
-          <div class="slogan">
-          <div>PRIVATE DENTISTRY</div>
-          <div>IN A RELAXING</div>
-          <div>HIGH-TECH</div>
-          <div>ENVIRONMENT</div>
-        </div>
-          <div class="infoBox">
-            <button class="btn">EXPLORE</button>
-          </div>
+    <div v-if="showCarousel === 'carousel2'" class="carousel2">
+      <div class="left">
+        <div class="line"></div>
+        <div class="slogan">
+        <div>START TO LOVE YOUR</div>
+        <div>CHARMING SMILE</div>
+        <div>AGAIN.</div>
+      </div>
+        <div class="infoBox">
+          <div class="title">碩造您完美的微笑</div>
+          <p>碩美牙醫擁有經驗豐富的台大專業醫師團隊及頂尖的數位醫療設備，在這裡您將感受親切服務誠摯溝通、醫師的縝密診斷與適切治療為您把關口腔健康，讓您重拾自信的微笑。</p>
+          <button class="btn">EXPLORE</button>
         </div>
       </div>
       <div class="right">
         <img src="/static/images/Mask_Group_289.png" alt="">
       </div>
     </div>
-    <div class="carousel-item">
+    <div v-if="showCarousel === 'carousel3'" class="carousel3">
       <div class="left">
         <div class="line"></div>
         <div class="slogan">
@@ -75,17 +74,10 @@
 export default {
   data () {
     return {
-      slide: 0,
-      sliding: null
+      showCarousel: 'carousel1'
     }
   },
   methods: {
-    onSlideStart (slide) {
-      this.sliding = true
-    },
-    onSlideEnd (slide) {
-      this.sliding = false
-    }
   }
 }
 </script>
@@ -102,7 +94,6 @@ export default {
 }
 .carousel-item.active {
   display: flex;
-
 }
 
 .left, .left2 {
@@ -164,6 +155,7 @@ export default {
   color: #fff;
   border: 1px solid #fff;
   width: 100%;
+  margin-top: 50px;
 }
 .right {
   position: absolute;

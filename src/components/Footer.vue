@@ -10,13 +10,12 @@
       <div class="siteMap">
         <div class="title">SITE MAP</div>
         <ul class="mapList">
-          <li class="site">關於碩美</li>
-          <li class="site">診所資訊</li>
-          <li class="site">診療項目</li>
-          <li class="site">聯絡我們</li>
-          <li class="site">案例分享</li>
+          <li class="site"><router-link to="/about">關於碩美</router-link></li>
+          <li class="site"><router-link to="/location">診所資訊</router-link></li>
+          <li class="site"><router-link to="/diagnosis">診療項目</router-link></li>
+          <li class="site"><router-link to="/contact">聯絡我們</router-link></li>
           <li class="site">隱私權政策</li>
-          <li class="site">牙醫百科</li>
+          <li class="site"><router-link to="/encyclopedia">牙醫百科</router-link></li>
           <li class="site">服務條款</li>
         </ul>
       </div>
@@ -67,6 +66,12 @@ ul {
   align-items: center;
   position: relative;
   justify-content: space-around;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #639cb9;
 }
 .footer-logo {
   margin-bottom: 12px;

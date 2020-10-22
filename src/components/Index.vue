@@ -12,7 +12,7 @@
       <div class="description">
         <div class="title"><span class="decoration"></span>關於碩美</div>
         <p class="desc">碩美牙醫擁有經驗豐富的台大專業醫師團隊及頂尖的數位醫療設備，在這裡您將感受親切服務誠摯溝通、醫師的縝密診斷與適切治療為您把關口腔健康，讓您重拾自信的微笑。</p>
-        <button class="btn">關於碩美</button>
+        <router-link to="/about"><button class="btn">關於碩美</button></router-link>
       </div>
       <div class="brown"></div>
     </b-container>
@@ -24,7 +24,7 @@
       <div class="description">
           <div class="title"><span class="decoration"></span>診療項目</div>
           <p class="desc">簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介</p>
-          <button class="btn">關於碩美</button>
+          <router-link to="/diagnosis"><button class="btn">關於碩美</button></router-link>
       </div>
     </b-container>
     <hr>

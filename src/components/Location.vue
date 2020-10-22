@@ -112,12 +112,16 @@ main {
   font-weight: 700;
 }
 .map {
-  max-width: 787px;
+  max-width: 789px;
 }
 .map img{
   width:100%;
 }
-@media (max-width:901px){
+@media(max-width: 1200x){
+  .map {
+    max-width: 554px;
+  }
+
   .info {
     flex-basis: 100%;
     margin-bottom: 10px;
@@ -131,7 +135,7 @@ main {
     margin-right: 10px;
   }
 }
-@media (max-width: 601px){
+@media(max-width: 769px){
   .info {
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +144,7 @@ main {
     flex-basis: 70%;
   }
 }
-@media (max-width: 376px) {
+@media(max-width:415px) {
   .time .wrap {
     flex-basis: 50%;
   }

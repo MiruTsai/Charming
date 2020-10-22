@@ -80,4 +80,9 @@ a.router-link-active + .decoration {
   border-bottom: solid 8px #639cb9;
   display: block;
 }
+@media (max-width: 1200px){
+  .nav-link {
+    margin: 0 10px;
+  }
+}
 </style>
